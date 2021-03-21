@@ -1,0 +1,181 @@
+@import './colors';
+
+.light {
+    .dialog-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+    }
+
+    @mixin dialog-content {
+        background-color: $light !important;
+        padding: 20px;
+        margin: 10% auto;
+        border-radius: 3px;
+
+        @media (max-width: 600px) {
+            margin: 40% auto;
+        }
+    }
+
+    .alert {
+        @include dialog-content();
+
+        div:first-child {
+            padding: 20px;
+            text-align: center;
+            color: $dark;
+            font-size: 1.2em;
+        }
+
+        div:last-child {
+            margin-top: 20px;
+            text-align: right;
+        }
+
+        width: 300px;
+        animation: bounce 0.3s ease-in-out forwards;
+
+        @media (max-width: 600px) {
+            width: 250px;
+
+            div:first-child {
+                font-size: 1em;
+                padding: 5px;
+            }
+        }
+    }
+
+    .modal {
+        @include dialog-content();
+        padding: 0 !important;
+        margin: 5% auto !important;
+
+        div:first-child {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            border-bottom: solid 1px $gray;
+        }
+
+        div:last-child {
+            padding: 20px;
+            max-height: 70vh;
+            overflow: auto;
+        }
+
+        width: 70%;
+        animation: bounce 0.3s ease-in-out forwards;
+
+        @media (max-width: 600px) {
+            width: 300px;
+            margin: 20% auto !important;
+        }
+    }
+
+    @keyframes bounce {
+        from {
+            transform: scale(0);
+        }
+
+        to {
+            transform: scale(1);
+        }
+    }
+}
+
+.dark {
+    .dialog-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.2);
+        z-index: 999;
+    }
+
+    @mixin dialog-content-dark {
+        background-color: $dark !important;
+        padding: 20px;
+        margin: 10% auto;
+        border-radius: 3px;
+
+        @media (max-width: 600px) {
+            margin: 40% auto;
+        }
+    }
+
+    .alert {
+        @include dialog-content-dark();
+
+        div:first-child {
+            padding: 20px;
+            text-align: center;
+            color: $light;
+            font-size: 1.2em;
+        }
+
+        div:last-child {
+            margin-top: 20px;
+            text-align: right;
+        }
+
+        width: 300px;
+        animation: bounce 0.3s ease-in-out forwards;
+
+        @media (max-width: 600px) {
+            width: 250px;
+
+            div:first-child {
+                font-size: 1em;
+                padding: 5px;
+            }
+        }
+    }
+
+    .modal {
+        @include dialog-content-dark();
+        padding: 0 !important;
+        margin: 5% auto !important;
+
+        div:first-child {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            color: $light;
+            border-bottom: solid 1px $gray;
+        }
+
+        div:last-child {
+            padding: 20px;
+            max-height: 70vh;
+            color: $light;
+            overflow: auto;
+        }
+
+        width: 70%;
+        animation: bounce 0.3s ease-in-out forwards;
+
+        @media (max-width: 600px) {
+            width: 300px;
+            margin: 20% auto !important;
+        }
+    }
+
+    @keyframes bounce {
+        from {
+            transform: scale(0);
+        }
+
+        to {
+            transform: scale(1);
+        }
+    }
+}

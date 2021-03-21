@@ -1,0 +1,18 @@
+@import './colors';
+@import './buttons';
+@import './margins';
+@import './dialogs';
+
+body {
+    .light {
+        background-color: $light;
+    }
+
+    .dark {
+        background-color: $dark;
+    }
+}
+
+.icon {
+    cursor: pointer;
+}

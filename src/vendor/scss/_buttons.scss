@@ -1,0 +1,296 @@
+@import './colors';
+
+.btn {
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+
+    &:hover {
+        opacity: 0.8;
+        transition: 0.3s ease-in-out;
+    }
+}
+
+.btn-expand {
+    width: 100% !important;
+}
+
+.btn-rounded {
+    border-radius: 10% !important;
+}
+
+.btn-sm {
+    font-size: 0.75em !important;
+    padding: 7px;
+}
+
+.btn-lg {
+    font-size: 1.2em;
+    padding: 16px 20px;
+}
+
+.light {
+
+    // Primary
+    .btn-primary {
+        background-color: $primary;
+        border: solid 1px $primary;
+        color: $light;
+    }
+
+    .btn-primary-outline {
+        background-color: transparent;
+        border: solid 1px $primary;
+        color: $primary;
+
+        &:hover {
+            background-color: $primary;
+            color: $light;
+        }
+    }
+
+    // Secondary
+    .btn-secondary {
+        background-color: $secondary;
+        border: solid 1px $secondary;
+        color: $light;
+    }
+
+    .btn-secondary-outline {
+        background-color: transparent;
+        border: solid 1px $secondary;
+        color: $secondary;
+
+        &:hover {
+            background-color: $secondary;
+            color: $light;
+        }
+    }
+
+    // Success
+    .btn-success {
+        background-color: $success;
+        border: solid 1px $success;
+        color: $light;
+    }
+
+    .btn-success-outline {
+        background-color: transparent;
+        border: solid 1px $success;
+        color: $success;
+
+        &:hover {
+            background-color: $success;
+            color: $light;
+        }
+    }
+
+    // Danger
+    .btn-danger {
+        background-color: $danger;
+        border: solid 1px $danger;
+        color: $light;
+    }
+
+    .btn-danger-outline {
+        background-color: transparent;
+        border: solid 1px $danger;
+        color: $danger;
+
+        &:hover {
+            background-color: $danger;
+            color: $light;
+        }
+    }
+
+    // Info
+    .btn-info {
+        background-color: $info;
+        border: solid 1px $info;
+        color: $light;
+    }
+
+    .btn-info-outline {
+        background-color: transparent;
+        border: solid 1px $info;
+        color: $info;
+
+        &:hover {
+            background-color: $info;
+            color: $light;
+        }
+    }
+
+    // Light
+    .btn-light {
+        background-color: $light;
+        border: solid 1px $dark;
+        color: $dark;
+    }
+
+    .btn-light-outline {
+        background-color: transparent;
+        border: solid 1px $light;
+        color: $light;
+
+        &:hover {
+            background-color: $light;
+            color: $dark;
+        }
+    }
+
+    // Dark
+    .btn-dark {
+        background-color: $dark;
+        border: solid 1px $dark;
+        color: $light;
+    }
+
+    .btn-dark-outline {
+        background-color: transparent;
+        border: solid 1px $dark;
+        color: $dark;
+
+        &:hover {
+            background-color: $dark;
+            color: $light;
+        }
+    }
+}
+
+.dark {
+
+    // Primary
+    .btn-primary {
+        background-color: $primary-dark;
+        border: none;
+        color: $light;
+    }
+
+    .btn-primary-outline {
+        background-color: transparent;
+        border: solid 1px $light;
+        color: $light;
+
+        &:hover {
+            background-color: $primary-dark;
+            border: solid 1px $primary-dark;
+            color: $light;
+        }
+    }
+
+    // Success
+    .btn-success {
+        background-color: $success-dark;
+        border: none;
+        color: $light;
+    }
+
+    .btn-success-outline {
+        background-color: transparent;
+        border: solid 1px $light;
+        color: $light;
+
+        &:hover {
+            background-color: $success-dark;
+            border: solid 1px $success-dark;
+            color: $light;
+        }
+    }
+
+    // Secondary
+    .btn-secondary {
+        background-color: $secondary-dark;
+        border: none;
+        color: $light;
+    }
+
+    .btn-secondary-outline {
+        background-color: transparent;
+        border: solid 1px $light;
+        color: $light;
+
+        &:hover {
+            background-color: $secondary-dark;
+            border: solid 1px $secondary-dark;
+            color: $light;
+        }
+    }
+
+    // Danger
+    .btn-danger {
+        background-color: $danger-dark;
+        border: none;
+        color: $light;
+    }
+
+    .btn-danger-outline {
+        background-color: transparent;
+        border: solid 1px $light;
+        color: $light;
+
+        &:hover {
+            background-color: $danger-dark;
+            border: solid 1px $danger-dark;
+            color: $light;
+        }
+    }
+
+    // Info
+    .btn-info {
+        background-color: $info-dark;
+        border: none;
+        color: $light;
+    }
+
+    .btn-info-outline {
+        background-color: transparent;
+        border: solid 1px $light;
+        color: $light;
+
+        &:hover {
+            background-color: $info-dark;
+            border: solid 1px $info-dark;
+            color: $light;
+        }
+    }
+
+    // Light
+    .btn-light {
+        background-color: $light;
+        border: solid 1px $dark;
+        color: $dark;
+    }
+
+    .btn-light-outline {
+        background-color: transparent;
+        border: solid 1px $light;
+        color: $light;
+
+        &:hover {
+            background-color: $light;
+            color: $dark;
+        }
+    }
+
+    // Dark
+    .btn-dark {
+        background-color: $dark;
+        border: solid 1px $light;
+        color: $light;
+    }
+
+    .btn-dark-outline {
+        background-color: transparent;
+        border: solid 1px $dark;
+        color: $dark;
+
+        &:hover {
+            background-color: $dark;
+            color: $light;
+        }
+    }
+
+}
