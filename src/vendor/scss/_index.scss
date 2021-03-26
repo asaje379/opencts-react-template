@@ -2,6 +2,9 @@
 @import './buttons';
 @import './margins';
 @import './dialogs';
+@import './inputs';
+@import './displays';
+@import './tables';
 
 body {
     .light {
@@ -10,6 +13,10 @@ body {
 
     .dark {
         background-color: $dark;
+
+        * {
+            color: $light;
+        }
     }
 }
 

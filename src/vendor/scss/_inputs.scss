@@ -1,0 +1,129 @@
+@import "./colors";
+
+.input-container {
+    position: relative;
+    margin-bottom: 15px;
+
+    &.sm {
+        input {
+            padding: 5px;
+            font-size: 0.85em;
+        }
+    }
+
+    &.md {
+        height: 45px;
+        input {
+            padding: 7px;
+            font-size: 1em;
+        }
+    }
+
+    &.lg {
+        input {
+            padding: 10px;
+            font-size: 1.2em;
+        }
+    }
+
+    input {
+        border: none;
+        outline: none;
+        width: 100%;
+        background-color: inherit;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        border-bottom: solid 1px $form-color;
+        transition: all 0.3s ease-in-out;
+        z-index: 2;
+
+        &:focus + label {
+            transform: translateY(-23px);
+            font-size: 0.75em;
+        }
+
+        &:focus:valid + label {
+            transform: translateY(-23px);
+            font-size: 0.75em;
+        }
+
+        &:invalid:focus + label {
+            color: $danger;
+        }
+
+        &:invalid:focus {
+            border-bottom: solid 1px $danger;
+        }
+
+        &:valid:not(:focus) + label {
+            transform: translateY(-23px);
+            font-size: 0.75em;
+            color: $success;
+        }
+
+        &.touched:not(:focus):not(:valid) {
+            border-bottom: solid 1px $danger;
+        }
+        
+        &.touched:not(:focus):not(:valid) + label {
+            color: $danger;
+        }
+
+        &.touched:not(:focus):valid {
+            border-bottom: solid 1px $form-color;
+        }
+        
+        &.touched:not(:focus):valid + label {
+            color: $form-color;
+        }
+    }
+
+    label {
+        position: absolute;
+        bottom: 5px;
+        left: 0;
+        color: $form-color;
+        width: 100%;
+        transform: translateY(0px);
+        font-size: 1em;
+        transition: all 0.3s ease-in-out;
+        z-index: 1;
+    }
+
+    &.nofloat {
+        label {
+            transform: translateY(-23px);
+        }
+    }
+
+    div {
+        position: absolute;
+        bottom: -12px;
+        font-size: 0.65em;
+
+        p {
+            overflow: hidden;
+            max-width: 250px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            color: $danger !important;
+        }
+    }
+}
+
+
+.searchbar {
+    display: grid;
+    grid-template-columns: 40px auto;
+    background-color: $white;
+    border-radius: 3px;
+    box-shadow: 0 2px 4px 0 $gray;
+
+    input {
+        border: none;
+        outline: none;
+        padding: 7px;
+        background-color: transparent;
+    }
+}

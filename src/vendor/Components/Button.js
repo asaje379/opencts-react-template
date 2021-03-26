@@ -9,6 +9,7 @@ export default function Button({
     sm = false,
     lg = false,
     icon = null,
+    title = '',
     onClick,
     children
 }) {
@@ -26,9 +27,9 @@ export default function Button({
     }, [color, expand, rounded, sm, lg, outlined]);
 
     return (
-        <button className={css} onClick={onClick} >
+        <button title={title} className={css} onClick={onClick} >
             {icon ? <>
-                <Icon name={icon} /> <span className="mr-1"></span>
+                <Icon name={icon} size={sm ? '0.85': '1'} /> {children && <span className="mr-1"></span>}
             </> : null}
             {children}
         </button>
