@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope, faLock, faUser, faChartBar, faHome, faAngleRight, faList, faBook, faBars, faCog, faToolbox, faTools, faCheck, faCheckCircle, faAngleDown, faChartLine, faChartPie, faChartArea, faSearch, faTimesCircle, faExclamationTriangle, faInfoCircle, faExclamationCircle, faPlus, faPlusCircle, faUserPlus, faUpload, faGraduationCap, faUserCircle, faUsers, faDatabase, faPencilAlt, faFileInvoice, faPaperclip, faEye, faPaperPlane, faHourglassHalf, faShoePrints, faSignOutAlt, faCalendar, faUserSecret, faAddressCard, faTrash, faArrowLeft, faFolderOpen, faArrowsAltH, faSortNumericUp, faSortNumericDown, faRandom, faForward, faBackward } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faLock, faUser, faChartBar, faHome, faAngleRight, faList, faBook, faBars, faCog, faToolbox, faTools, faCheck, faCheckCircle, faAngleDown, faChartLine, faChartPie, faChartArea, faSearch, faTimesCircle, faExclamationTriangle, faInfoCircle, faExclamationCircle, faPlus, faPlusCircle, faUserPlus, faUpload, faGraduationCap, faUserCircle, faUsers, faDatabase, faPencilAlt, faFileInvoice, faPaperclip, faEye, faPaperPlane, faHourglassHalf, faShoePrints, faSignOutAlt, faCalendar, faUserSecret, faAddressCard, faTrash, faArrowLeft, faFolderOpen, faArrowsAltH, faSortNumericUp, faSortNumericDown, faRandom, faForward, faBackward, faPrint, faFilePdf, faFileExcel } from '@fortawesome/free-solid-svg-icons';
 
 const icons = {
     user: faUser,
@@ -43,6 +43,9 @@ const icons = {
     send: faPaperPlane,
     traitement: faHourglassHalf,
     step: faShoePrints,
+    print: faPrint,
+    pdf: faFilePdf,
+    excel: faFileExcel,
     logout: faSignOutAlt,
     remove: faTrash,
     back: faArrowLeft,
@@ -52,7 +55,7 @@ const icons = {
     descNumSort: faSortNumericDown,
     random: faRandom,
     next: faForward,
-    back: faBackward
+    previous: faBackward
 };
 
 export const Icon = ({

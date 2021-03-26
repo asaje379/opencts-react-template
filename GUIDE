@@ -57,6 +57,7 @@
         . Spinner
         . ProgressBar
         . Datatable
+            _ columns _ sort _ print _ download (pdf-excel) _
         . Pagination
     * VIEWS
         . Login
